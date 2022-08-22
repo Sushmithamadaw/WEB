@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10a Lab Program</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+           // $("span").text($(this).attr('maxlength'));
+           // $("#ta").keyup(function(){
+               // var l = $(this).attr(maxlength) - $(this).val().length;
+             // $("span").text(l);
+           // });
+            var maxl=$("#ta").attr('maxlength');
+            $("span").text(maxl);
+            $("#ta").keyup(function(){
+                var l = maxl - $(this).val().length;
+                $("#m").text(l);
+        });
+    });
+    </script>
+</head>
+<body><form>
+   <h4>Maximum 15 characters<h4>
+    <textarea name="ta" id="ta" cols="30" rows="10" maxlength="20"></textarea>
+   <h4> <span id="m">20</span> character(s) Remaining</h4>
+    </form>
+</body>
+</html>

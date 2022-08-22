@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11a prg</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+  
+   $(function(){
+    $("#fi").click(function(){
+        $("div").fadeIn(3000);
+    });
+    $("#fo").click(function(){
+        $("div").fadeOut(3000);
+    });
+});
+     </script>
+</head>
+<body>
+    <div style="background-color: rgb(223, 84, 107);">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis impedit et, unde laudantium, est mollitia obcaecati veritatis vero iste explicabo cum quo? Rem quidem accusamus vel nemo fugit quis soluta!</p>
+</div>
+<div style="background-color:rgb(125, 125, 233);">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis impedit et, unde laudantium, est mollitia obcaecati veritatis vero iste explicabo cum quo? Rem quidem accusamus vel nemo fugit quis soluta!</p>
+</div>
+<button id="fi" >Fade in</button>
+<button id="fo" >Fade out</button>
+</body>
+</html>
